@@ -160,7 +160,7 @@ jobs:
         7z a ${{ steps.slug.outputs.REPOSITORY_NAME }}-${{ steps.slug.outputs.sha8 }}-PS2TOOL.7z PS2Ident-PS2TOOL/*
 
     - name: Download ps2idbms artifact
-      uses: actions/download-artifact@4
+      uses: actions/download-artifact@v4
       with:
         name: PS2IDBMS
 
